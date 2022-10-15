@@ -46,6 +46,8 @@ img{
 }
 
 .nav-item a{
+  font-family: "Poppins";
+  font-weight: 400;
   font-size: 18px;
   padding: 18px 0px;
   color: #f4f4f4;
@@ -96,6 +98,8 @@ picture img{
 }
 
 .principal-info h1{
+  font-family: "Poppins";
+  font-weight: 600;
   font-size: 4rem;
   max-width: 15ch;
 }
@@ -103,18 +107,22 @@ picture img{
 color:rgba(255, 187, 0, 1);
 }
 .principal-info p{
+  font-family: "Roboto";
+  font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.5;
   color: #b2b2b2;
   max-width: 45ch;
 }
 .principal-info a{
+  font-family: "Poppins";
+  font-weight: 600;
   background: linear-gradient(#ffbf00, #f2a50c);
   padding: 16px 32px;
   color:#332200;
   border-radius: 4px;
  justify-self: self-start;
- font-weight: bold;
+ 
  text-transform: uppercase;
  margin-bottom: 100px;
 }
