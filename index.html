@@ -11,8 +11,9 @@
 
   <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
       <img src="./img/bikcraft.svg" alt="Bikcraft">
       <nav class="nav" aria-label="primaria">
         <ul class="nav-list font-1-m cor-0">
-          <li class="nav-item"><a href="./" >Bicicletas</a></li>
+          <li class="nav-item"><a href="./">Bicicletas</a></li>
           <li class="nav-item"><a href="./">Seguros</a></li>
           <li class="nav-item"><a href="./">Contato</a></li>
         </ul>
@@ -34,22 +35,95 @@
       <div class="principal-info">
         <h1 class="font-1-xxl cor-0">Bicicletas feitas
           sob medida<span class="p-1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua
+        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente.
+          Explore o mundo na sua
           velocidade com a Bikcraft.</p>
         <a href="./" class="botao">Selecione a sua</a>
       </div>
 
-      
-        <picture>
-          <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
-          <img src="./img/fotos/introducao.jpg" alt="Bicicleta preta com motor elétrico" width="640" height="800" class="">
-        </picture>
-        
-      
+
+      <picture>
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+        <img src="./img/fotos/introducao.jpg" alt="Bicicleta preta com motor elétrico" width="640" height="800"
+          class="">
+      </picture>
+
+
     </article>
   </main>
 
-  <h2 class="font-1-xxl">escolha a sua<span class="p-1">.</span></h2>
+  <article class="bicicletas-home">
+    <h2 class="font-1-xxl">escolha a sua<span class="p-1">.</span></h2>
+    <ul class="bicicletas-lista">
+      <li class="bicicleta-item">
+        <a href="">
+          <div class="item-img">
+            <img src="./img/bicicletas/magic-home.jpg" alt="Bicicleta Preta Magic Might">
+          </div>
+          <div class="item-info">
+            <h3 class="font-1-xl cor-12">Magic Might</h3>
+            <span class="font-2-m cor-8">R$ 2499</span>
+          </div>
+        </a>
+      </li>
+      <li class="bicicleta-item">
+        <a href="">
+          <div class="item-img">
+            <img src="./img/bicicletas/nimbus-home.jpg" alt="Bicicleta Preta Magic Might">
+          </div>
+          <div class="item-info">
+            <h3 class="font-1-xl cor-12">Nimbus Stark</h3>
+            <span class="font-2-m cor-8">R$ 4999</span>
+          </div>
+        </a>
+      </li>
+
+      <li class="bicicleta-item">
+        <a href="">
+          <div class="item-img">
+            <img src="./img/bicicletas/nebula-home.jpg" alt="Bicicleta Preta Magic Might">
+          </div>
+          <div class="item-info">
+            <h3 class="font-1-xl cor-12">Nebula Cosmic</h3>
+            <span class="font-2-m cor-8">R$ 3999</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <section class="tecnologia-bg">
+    <article class="tecnologia-content">
+      <div class="tecnologia-info">
+        <span class="cor-5 font-2-l">TECNOLOGIA AVANÇADA</span>
+        <h2 class="font-1-xxl cor-0">você escolhe as
+          suas cores e
+          componentes<span class="p-1">.</span></h2>
+        <p class="font-2-l cor-5">Cada Bikcraft é única e possui a sua identidade. As medidas serão exatas para o seu corpo e altura,
+          garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente as suas
+          cores.</p>
+        <a href="#" class="font-1-l p-1">ESCOLHA UM MODELO</a>
+        <ul class="vantagens-list">
+          <li class="vantagens-item">
+            <img src="./img/icones/eletrica.svg" alt="">
+            <h3 class="cor-0">Motor Elétrico</h3>
+            <p class="cor-5 font-2-s" >Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada
+              com a sua energia gasta ao pedalar.</p>
+          </li>
+          <li class="vantagens-item">
+            <img src="./img/icones/rastreador.svg" alt="">
+            <h3 class="cor-0">Rastreador</h3>
+            <p class="cor-5 font-2-s">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para
+              garantir o seu sossego.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="img-dv">
+        <img class="tecnologia-img"src="./img/fotos/tecnologia.jpg" alt="">
+      </div>
+    </article>
+  </section>
+
 
 </body>
 
