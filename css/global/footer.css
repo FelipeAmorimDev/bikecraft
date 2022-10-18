@@ -29,3 +29,18 @@
 .footer-itens:last-child .link-list a:hover{
   color:var(--cor-1)
 }
+
+@media (max-width:800px){
+  
+  
+}
+
+@media (max-width:600px){
+  .footer-container{
+    display: block;
+    padding: 20px;
+  }
+  .copywrite{
+    padding: 20px;
+  }
+}
