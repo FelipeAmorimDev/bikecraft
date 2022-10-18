@@ -30,4 +30,9 @@ background: linear-gradient(#ffb60d, #e59317);
     font-size: .9rem;
     padding: 12px 16px;
   }
+
+  .botao-prata{
+    padding: 12px 16px;
+    font-size: .9rem;
+  }
 }

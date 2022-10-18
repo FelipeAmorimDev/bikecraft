@@ -4,8 +4,10 @@
 }
 .seguros-content{
   max-width: 1200px;
+  padding: 20px;
   margin: 0 auto;
 }
+
 .seguros-list{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -18,7 +20,7 @@
   display: grid;
   gap: 40px;
   align-self: center;
-  
+  border-radius: 10px;
   background-color: var(--cor-12);
 }
 
@@ -48,8 +50,23 @@
 
 .seguros-list a{
 margin: 0px;
+place-self: center;
 }
 
 .header-card h3{
   padding-left: 20px;
+}
+
+@media (max-width:600px){
+  .seguros-list{
+  grid-template-columns: 1fr;
+  }
+  .vantagens-seguro{
+    justify-content: center;
+  }
+  
+.seguros-content h2{
+ margin-bottom: 60px; 
+}
+
 }
