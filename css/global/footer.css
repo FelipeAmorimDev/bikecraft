@@ -1,0 +1,31 @@
+.footer-bg{
+  background-color: var(--cor-12);
+}
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: .5fr repeat(2,1fr);
+  padding: 40px;
+}
+
+.link-list{
+  display: grid;
+  gap: 14px;
+}
+
+.link-redes{
+  display: flex;
+  gap: 20px;
+}
+
+.copywrite{
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 50px 60px
+}
+
+.footer-itens:last-child .link-list a:hover{
+  color:var(--cor-1)
+}

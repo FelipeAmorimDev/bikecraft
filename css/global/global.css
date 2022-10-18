@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
   margin: 0px;
-  margin-bottom: 600px;
+ 
   background-color: var(--cor-0);
 
 
@@ -37,7 +37,12 @@ img[src$=".jpg"]{
 .mb{
   padding-bottom: 40px;
 }
-
+.m1{
+  margin-bottom: 32px;
+}
+.mt2{
+  margin-top: 10px;
+}
 .pt{
   padding-top: 40px;
 }

@@ -1,6 +1,9 @@
 .article-principal-bg{
   background-color: var(--cor-12);
   box-shadow: inset 0 -120px var(--cor-0);
+  background-image: url("../../img/dec/bottom-left.svg");
+  background-position: 30px 630px;
+  background-repeat: no-repeat;
 
 }
 picture img{
