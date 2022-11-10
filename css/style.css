@@ -12,3 +12,7 @@
 @import url("./home/depoimentos.css");
 @import url("./home/seguros.css");
 @import url("./global/footer.css");
+
+/* Paginas Secundaria */
+
+@import url("./paginas-secundarias/termos-container.css");

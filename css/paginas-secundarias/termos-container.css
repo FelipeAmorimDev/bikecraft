@@ -1,0 +1,43 @@
+.cabecalho-pagina-bg{
+  background-color: var(--cor-11);
+}
+
+.cabecalho-container{
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cabecalho-container p.font-2-l{
+  font-weight: 500;
+}
+
+.termos-container{
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 120px 20px;
+}
+
+.termos-list .termo-item h2{
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.termos-list .termo-item p{
+  max-width: 75ch;
+}
+.termos-list .termo-item p+p{
+  margin-top: 30px;
+}
+
+.termos-list div.termo-item:nth-child(even){
+  margin:48px 0px;
+}
+
+@media (max-width:800px){
+  .cabecalho-container p.font-2-l{
+    font-size: .9rem;
+  }
+  .cabecalho-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
