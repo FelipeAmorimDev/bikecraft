@@ -27,7 +27,7 @@ place-self: flex-start;
  border-bottom: 4px solid var(--p-1);
 }
 
-.vantagens-list{
+.tecnologia-info .vantagens-list{
   display: flex;
   margin-top: 20px;
   padding-bottom: 40px;
@@ -35,7 +35,7 @@ place-self: flex-start;
   gap: 20px;
 }
 
-.vantagens-item{
+.tecnologia-info .vantagens-item{
   display: grid;
   gap: 10px;
 }

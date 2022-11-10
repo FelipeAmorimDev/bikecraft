@@ -1,0 +1,142 @@
+.bicicletas-container {
+
+
+  padding: 120px 0px;
+}
+
+.bike-item+.bike-item {
+  margin-top: 60px;
+
+}
+
+.bike-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.imgBike-Container {
+  position: relative;
+}
+
+.bike-item span.font-1-m {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: black;
+  border-radius: 4px;
+  padding: 8px 16px 8px 8px;
+}
+
+.bike-list li.bike-item-bg:nth-child(even) {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 32%, rgba(17, 17, 17, 1) 15%);
+  padding: 60px 0px;
+  margin: 60px 0px;
+}
+
+.bike-list li.bike-item-bg:nth-child(even) h2 {
+  color: white;
+}
+
+.bike-list li.bike-item-bg:nth-child(even) p,
+li {
+  color: var(--cor-5);
+}
+
+.bike-item {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+.bike-item .bike-content {
+  display: grid;
+  grid-template-columns: 2fr minmax(180px,1fr);
+  align-content: center;
+  gap: 20px;
+}
+
+.bike-item .bike-content h2,
+.bike-item .bike-content p {
+  grid-column: span 2;
+  max-width: 45ch;
+}
+
+.bike-item .bike-content p {
+  margin-bottom: 12px;
+}
+
+.bike-content .vantagens-list {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.bike-content .vantagens-list .vantagens-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bike-content .vantagens-list .vantagens-item+.vantagens-item {
+  margin-top: 16px;
+}
+
+.bike-content a.botao {
+  margin: 0px;
+  align-self: end;
+}
+
+@media (max-width:800px) {
+  .bicicletas-container{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .bike-item .bike-content h2,
+  .bike-item .bike-content p {
+    max-width: initial;
+    margin-bottom: 0px;
+  }
+
+  .bike-item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .bike-item .bike-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .bike-content .vantagens-list {
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .bike-content .vantagens-list .vantagens-item+.vantagens-item {
+    margin-top: 0px;
+}
+
+  .bike-content .vantagens-list {
+    grid-column: span 2;
+  }
+
+  .bike-content a.botao {
+    grid-row: 4;
+  }
+
+  .bike-list li.bike-item-bg:nth-child(even) {
+    background: rgba(17, 17, 17, 1);
+    padding: 60px 0px;
+    margin: 60px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+
+}
