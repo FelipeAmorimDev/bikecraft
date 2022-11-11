@@ -1,0 +1,186 @@
+/* Falta ajustar medias para mobile */
+
+.seguro-container-bg{
+  background-color: var(--cor-11);
+  padding: 60px 30px 120px 30px;
+}
+
+.seguro-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seguro-list{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+/* fazer os flex item crescerem */
+
+.seguro-item{
+  flex: 1 1 340px;
+  
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background-color: var(--cor-12);
+  justify-content: center;
+  
+  padding: 32px 32px 32px 64px;
+  
+ 
+
+}
+.seguro-item h2{
+  margin-bottom: 40px;
+  align-self: baseline;
+}
+.seguro-vantagem-item{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.seguro-vantagem-list .seguro-vantagem-item+.seguro-vantagem-item{
+  margin-top: 20px;
+}
+.seguro-item button.botao-prata,.seguro-item button.botao{
+  grid-row:3;
+  margin-bottom: 0px;
+}
+.seguro-vantagem-list li.seguro-vantagem-item:last-child{
+  margin-bottom: 24px;
+}
+
+.seguro-item > p.font-1-xl{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  place-self: start end;
+}
+
+
+/* Vantagens Seguro */
+
+.vantagens-seguro-bg{
+  background-color: var(--cor-12);
+}
+
+.vantagens-seguro-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 30px;
+}
+
+.vantagens-seguro-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.vantagens-seguro-list .vantagens-seguro-item{
+  flex:1 1 370px;
+}
+
+.vantagens-seguro-container h2.font-1-xxl{
+  margin-bottom: 92px
+}
+
+@media (max-width:1200px){
+  .vantagens-seguro-container{
+    padding: 60px 30px;
+    }
+    .vantagens-seguro-container h2.font-1-xxl{
+      margin-bottom: 46px
+    }
+    
+}
+
+@media (max-width:800px){
+  .vantagens-seguro-item h3.cor-0{
+    font-size: 1.2rem;
+  }
+}
+
+/* Perguntas Frequentes */
+
+.perguntas-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 30px;
+}
+
+.perguntas-container h2{
+  margin-bottom: 88px;
+}
+
+.perguntas-item{
+  
+  padding: 18px 18px 18px 40px;
+}
+.perguntasfq-header{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.perguntasfq-header img{
+  transform: rotate(180deg);
+  transition: transform .3s;
+}
+.perguntasfq-header img:hover{
+  transform: rotate(360deg);
+}
+li.perguntas-item:last-child{
+  padding-bottom: 16px;
+}
+
+li.perguntas-item:nth-child(odd){
+  background-color: var(--cor-1);
+  border-radius: 4px;
+}
+.perguntafq-resposta p{
+  max-width: 80ch;
+}
+.perguntafq-resposta{
+  display: block;
+}
+
+.perguntafq-resposta p{
+  margin-top: 16px;
+}
+.perguntasfq-header h3{
+  position: relative;
+}
+
+.perguntasfq-header h3::before{
+  display: block;
+  content: "";
+  width: 12px;
+  height: 8px;
+  top: 8px;
+  left: -20px;
+  background-color: var(--p-1);
+  position: absolute;
+}
+
+@media (max-width:1200px){
+  .perguntas-container{
+  padding: 60px 30px;
+  }
+  .perguntas-container h2{
+    margin-bottom: 42px;
+    }
+  
+}
+
+@media (max-width:600px){
+  .perguntas-container{
+    padding: 30px 30px;
+    }
+    .perguntas-container h2{
+      margin-bottom: 22px;
+      }
+    
+}
