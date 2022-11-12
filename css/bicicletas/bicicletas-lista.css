@@ -10,6 +10,9 @@
   background-color: var(--cor-0);
 }
 
+.bike-interna .bicicletas-home{
+  max-width: 1200px;
+}
 
 .bicicletas-lista{
   overflow-x: auto;
