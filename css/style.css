@@ -17,4 +17,8 @@
 
 @import url("./paginas-secundarias/termos-container.css");
 @import url("./paginas-secundarias/bicicletas-container.css");
-@import url("./paginas-secundarias/seguros-container.css")
+@import url("./paginas-secundarias/seguros-container.css");
+
+/* Pagina interna biKe */
+
+@import url("./bicicletas/nimbus.css");

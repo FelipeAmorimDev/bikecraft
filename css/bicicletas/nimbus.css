@@ -1,0 +1,169 @@
+.detalhes-bicicleta-bg{
+  background-color: var(--cor-11);
+}
+
+.detalhes-bicicleta{
+  display: grid;
+  padding: 60px 30px;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+ 
+}
+.detalhes-bicicleta-texto{
+  display: grid;
+  gap: 40px;
+  margin-left: 40px;
+  
+}
+.detalhes-bicicleta .bike-images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: start;
+  gap: 20px;
+}
+
+.detalhes-bicicleta .bike-images picture:first-child{
+  grid-column: span 2;
+}
+
+#segundaFoto{
+  grid-column: 1;
+}
+
+#terceiraFoto{
+  grid-column: 2;
+}
+
+.detalhes-bicicleta-texto a.botao{
+  margin: 0px;
+}
+
+.detalhes-bicicleta-texto div.detalhes-item:first-child{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px 12px;
+  align-items: center;
+}
+.detalhes-bicicleta-texto div.detalhes-item:first-child > p{
+  grid-column: span 2;
+  
+}
+
+.informacoes-entrega{
+  place-self: start;
+}
+
+.informacoes-entrega p{
+  background-color: black;
+  padding: 4px 8px;
+ 
+}
+.informacoes-entrega p:first-child{
+ margin-bottom: 8px;
+}
+
+.informacoes-bike-list{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+  background-color: black;
+  border-radius: 4px;
+  gap: 35px 32px;
+}
+
+.informacoes-bike-item{
+  flex: 1 1 165px;
+}
+
+.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list{
+  background-color: black;
+  padding: 32px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+@media (max-width:1200px){
+
+    .informacoes-bike-list{
+      padding: 16px;
+      gap: 12px;
+    }
+  
+
+  
+}
+
+@media (max-width:950px){
+  .detalhes-bicicleta .bike-images{
+    grid-template-columns: 1fr;
+    
+    }
+    .informacoes-bike-item{
+      flex: 1 1 135px;
+    }
+    .detalhes-bicicleta .bike-images picture:first-child{
+      grid-row: 1;
+      grid-column: 1;
+      
+    }
+    #terceiraFoto{
+      grid-column: 1;
+    }
+
+    .detalhes-bicicleta-texto{
+      margin-left: 20px;
+    }
+
+}
+
+@media (max-width:800px){
+  .detalhes-bicicleta{
+    grid-template-columns: 1fr;
+    padding: 0px 20px 40px 20px;
+  }
+  .detalhes-bicicleta .bike-images{
+    grid-template-columns: 1fr 1fr;
+    
+    }
+    .detalhes-bicicleta-texto{
+      order: -1;
+      margin-left: 0px;
+      
+    }
+    .detalhes-bicicleta .bike-images picture:first-child{
+    
+      grid-column: span 2;
+      margin-top: 20px;
+    }
+
+    #terceiraFoto{
+      grid-column: 2;
+    }
+
+    div.detalhes-item:nth-child(2) .informacoes-bike-item{
+      flex: 1 1 250px;
+    }
+}
+
+@media (max-width:600px){
+  div.detalhes-item:nth-child(2) .informacoes-bike-item{
+    flex: 1 1 170px;
+  }
+}
+
+@media (max-width:450px){
+  div.detalhes-item:nth-child(2) .informacoes-bike-item{
+    flex: 1 1 160px;
+  }
+}
