@@ -46,3 +46,7 @@ img[src$=".jpg"]{
 .pt{
   padding-top: 40px;
 }
+
+div.cabecalho-container p{
+  text-transform: uppercase;
+}

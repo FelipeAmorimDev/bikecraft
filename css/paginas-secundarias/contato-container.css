@@ -1,0 +1,130 @@
+.contato-container-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0px -260px var(--cor-1);
+  overflow: hidden;
+  padding: 0px 20px;
+}
+
+.contato-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(360px, 1fr) minmax(auto, 1fr);
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.detalhes-contato {
+  background-color: var(--cor-12);
+  padding: 60px;
+
+}
+
+.detalhes-contato>h2 {
+  margin-bottom: 60px;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+}
+
+.texto-item-container {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.texto-item-container+.texto-item-container {
+  margin-top: 32px;
+}
+
+.texto-item-container ul li+li {
+  margin-top: 6px;
+}
+
+div.redes-sociais-container {
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+  margin-left: 16px;
+}
+
+/* Formulario Contato */
+
+.formulario-contato {
+  background-color: var(--cor-0);
+  display: grid;
+  padding: 60px;
+  gap: 20px;
+
+}
+
+.coluna-1 {
+  width: 100%;
+}
+
+input:not(.botao),
+textarea {
+  width: calc(100% - 24px);
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.coluna-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario-contato input+label {
+  margin-top: 20px;
+}
+
+.formulario-contato label:nth-of-type(2) {
+  margin: 0px;
+}
+
+.formulario-contato input.botao {
+  margin: 0px;
+  margin-top: 20px;
+  border: none;
+
+
+}
+
+.formulario-contato input:not(.botao),
+textarea {
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.coluna-1 label {
+  display: inline-block;
+}
+
+
+/* Localizacao Lojas */
+
+.localizacao-mapa {
+  background-color: var(--cor-1);
+  
+}
+
+.localizacao-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+
+@media(max-width:800px){
+  .contato-container {
+  grid-template-columns: 1fr;
+  }
+  .formulario-contato,.detalhes-contato{
+    padding: 20px;
+  }
+}
