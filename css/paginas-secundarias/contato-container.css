@@ -116,10 +116,14 @@ textarea {
 
 }
 
+
 .localizacao-container {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 120px;
+}
+.localizacao-container h2{
+  padding: 0px 20px;
 }
 
 .loja-item {
