@@ -99,6 +99,9 @@ label {
 textarea {
   padding: 12px;
   border-radius: 4px;
+  font: inherit;
+  outline-color: var(--p-1);
+  resize: none;
 }
 
 .coluna-1 label {
