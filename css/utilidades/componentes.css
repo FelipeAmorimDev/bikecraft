@@ -9,6 +9,7 @@
  text-transform: uppercase;
  margin-bottom: 100px;
  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+ transition:1s;
 }
 .botao-prata{
   background: var(--cor-10);
@@ -19,12 +20,14 @@
  text-transform: uppercase;
  margin-bottom: 100px;
  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+ transition: .3s;
 }
 .botao-prata:hover{
   background-color: var(--cor-8);
 }
 .botao:hover{
 background: linear-gradient(#ffb60d, #e59317);
+transition:1s;
 }
 
 @media (max-width:600px){

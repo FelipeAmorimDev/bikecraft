@@ -91,6 +91,10 @@
   flex: 1 1 165px;
 }
 
+.detalhes-item a.botao{
+  margin: 0px;
+}
+
 .detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list{
   background-color: black;
   padding: 32px;
