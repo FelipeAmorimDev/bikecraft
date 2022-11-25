@@ -18,6 +18,9 @@
 .detalhes-contato {
   background-color: var(--cor-12);
   padding: 60px;
+  background-image: url("../../img/dec/bottom-left.svg");
+  background-repeat: no-repeat;
+  background-position: left 20px bottom 20px;
 
 }
 
@@ -54,6 +57,9 @@ div.redes-sociais-container {
   display: grid;
   padding: 60px;
   gap: 20px;
+  background-image: url("../../img/dec/bottom-right.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 20px;
 
 }
 
@@ -214,5 +220,9 @@ left: -20px;
   .formulario-contato,
   .detalhes-contato {
     padding: 20px;
+  }
+
+  .detalhes-contato {
+    background-image: none;
   }
 }
