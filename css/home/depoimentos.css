@@ -27,7 +27,24 @@
   font-family: 'Merriweather', serif;
   max-width: 33ch;
   margin-bottom: 20px;
+  position: relative;
 
+}
+
+.depoimento p::before{
+  content: "“";
+  position: absolute;
+  color: var(--p-2);
+  font-size: 5rem;
+  top: -16px;
+  left: -44px;
+}
+.depoimento p::after{
+  content: "”";
+  position: absolute;
+  color: var(--p-2);
+  font-size: 5rem;
+  bottom: -60px;
 }
 
 .depoimento span{
@@ -48,5 +65,25 @@
   }
   .depoimento span{
   text-align: center;
+  }
+}
+
+@media (max-width:600px){
+  .depoimento p{
+    text-align: center;
+  }
+  .depoimento p::before{
+    
+    left: -30px;
+  }
+}
+
+@media (max-width:460px){
+  .depoimento p{
+    text-align: center;
+  }
+  .depoimento p::before{
+    
+    left: -28px;
   }
 }
