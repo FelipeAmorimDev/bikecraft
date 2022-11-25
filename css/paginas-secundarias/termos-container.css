@@ -8,7 +8,7 @@
   margin: 0 auto;
   background-image: url("../../img/dec/top-right.svg");
   background-repeat: no-repeat;
-  background-position: right 20px top 60px
+  background-position: right 20px center;
 }
 .cabecalho-container p.font-2-l{
   font-weight: 500;
