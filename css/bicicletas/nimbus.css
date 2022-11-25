@@ -1,83 +1,118 @@
-.detalhes-bicicleta-bg{
-  
+.detalhes-bicicleta-bg {
+
   background-color: var(--cor-11);
- 
-  
+
+
 }
 
-.detalhes-bicicleta{
-  
+.detalhes-bicicleta {
+
   display: grid;
   padding: 60px 30px;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
-  
- 
+
+
 }
-.detalhes-bicicleta-texto{
+
+.detalhes-bicicleta-texto {
   display: grid;
   gap: 40px;
   margin-left: 40px;
-  
+
 }
-.detalhes-bicicleta .bike-images{
+
+.detalhes-bicicleta .bike-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-content: start;
   gap: 20px;
 }
 
-.detalhes-bicicleta .bike-images picture:first-child{
+.detalhes-bicicleta .bike-images picture:first-child {
   grid-column: span 2;
 }
 
-#segundaFoto{
+#segundaFoto {
   grid-column: 1;
 }
 
-#terceiraFoto{
+#terceiraFoto {
   grid-column: 2;
 }
 
-.seguros-texto a.botao{
+.seguros-texto a.botao {
   margin: 20px 0px 0px;
   display: inline-block;
-  
+
 }
 
-.seguros-texto h2{
+.seguros-texto h2 {
   margin-bottom: 32px;
 }
 
-.detalhes-bicicleta-texto div.detalhes-item:first-child{
+.detalhes-bicicleta-texto div.detalhes-item:first-child {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 32px 12px;
   align-items: center;
 }
-.detalhes-bicicleta-texto div.detalhes-item:nth-child(2) h2{
+
+.detalhes-bicicleta-texto div.detalhes-item:nth-child(2) h2 {
   text-transform: uppercase;
 }
-.detalhes-bicicleta-texto div.detalhes-item:first-child > p{
+
+.detalhes-bicicleta-texto div.detalhes-item:first-child>p {
   grid-column: span 2;
+
+}
+
+.informacoes-entrega {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   
 }
 
-.informacoes-entrega{
-  place-self: start;
-}
+.informacoes-entrega p {
 
-.informacoes-entrega p{
   background-color: black;
   padding: 4px 8px;
- 
-}
-.informacoes-entrega p:first-child{
- margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  align-content: start;
+  display: flex;
+
 }
 
-.informacoes-bike-list{
+.informacoes-entrega p:first-child::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../../img/icones/entrega.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.informacoes-entrega p:last-child::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../../img/icones/estoque.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.informacoes-entrega p:first-child {
+  margin-bottom: 8px;
+}
+
+
+
+.informacoes-bike-list {
   margin-top: 12px;
   display: flex;
   flex-wrap: wrap;
@@ -87,113 +122,121 @@
   gap: 35px 32px;
 }
 
-.informacoes-bike-item{
+.informacoes-bike-item {
   flex: 1 1 165px;
 }
 
-.detalhes-item a.botao{
+.detalhes-item a.botao {
   margin: 0px;
 }
 
-.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list{
+.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list {
   background-color: black;
   padding: 32px;
   border-radius: 4px;
   margin-top: 12px;
 }
 
-.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list h3{
+.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
   border-bottom: 1px solid var(--cor-11);
 }
+.bike-interna .bicicletas-home{
+  margin-bottom: 60px;
+}
+@media (max-width:1200px) {
 
-@media (max-width:1200px){
+  .informacoes-bike-list {
+    padding: 16px;
+    gap: 12px;
+  }
 
-    .informacoes-bike-list{
-      padding: 16px;
-      gap: 12px;
-    }
-  
 
-  
+
 }
 
-@media (max-width:950px){
-  .detalhes-bicicleta .bike-images{
+@media (max-width:950px) {
+  .detalhes-bicicleta .bike-images {
     grid-template-columns: 1fr;
-    
-    }
-    .informacoes-bike-item{
-      flex: 1 1 135px;
-    }
-    .detalhes-bicicleta .bike-images picture:first-child{
-      grid-row: 1;
-      grid-column: 1;
-      
-    }
-    #terceiraFoto{
-      grid-column: 1;
-    }
 
-    .detalhes-bicicleta-texto{
-      margin-left: 20px;
-    }
+  }
+
+  .informacoes-bike-item {
+    flex: 1 1 135px;
+  }
+
+  .detalhes-bicicleta .bike-images picture:first-child {
+    grid-row: 1;
+    grid-column: 1;
+
+  }
+
+  #terceiraFoto {
+    grid-column: 1;
+  }
+
+  .detalhes-bicicleta-texto {
+    margin-left: 20px;
+  }
 
 }
 
-@media (max-width:800px){
-  .detalhes-bicicleta{
+@media (max-width:800px) {
+  .detalhes-bicicleta {
     grid-template-columns: 1fr;
     padding: 0px 20px 40px 20px;
   }
-  .detalhes-bicicleta .bike-images{
+
+  .detalhes-bicicleta .bike-images {
     grid-template-columns: 1fr 1fr;
-    
-    }
-    .detalhes-bicicleta-texto{
-      order: -1;
-      margin-left: 0px;
-      
-    }
-    .detalhes-bicicleta .bike-images picture:first-child{
-    
-      grid-column: span 2;
-      margin-top: 20px;
-    }
 
-    #terceiraFoto{
-      grid-column: 2;
-    }
+  }
 
-    div.detalhes-item:nth-child(2) .informacoes-bike-item{
-      flex: 1 1 250px;
-    }
+  .detalhes-bicicleta-texto {
+    order: -1;
+    margin-left: 0px;
+
+  }
+
+  .detalhes-bicicleta .bike-images picture:first-child {
+
+    grid-column: span 2;
+    margin-top: 20px;
+  }
+
+  #terceiraFoto {
+    grid-column: 2;
+  }
+
+  div.detalhes-item:nth-child(2) .informacoes-bike-item {
+    flex: 1 1 250px;
+  }
 }
 
-@media (max-width:600px){
-  div.detalhes-item:nth-child(2) .informacoes-bike-item{
+@media (max-width:600px) {
+  div.detalhes-item:nth-child(2) .informacoes-bike-item {
     flex: 1 1 170px;
   }
 }
 
-@media (max-width:450px){
-  div.detalhes-item:nth-child(2) .informacoes-bike-item{
+@media (max-width:450px) {
+  div.detalhes-item:nth-child(2) .informacoes-bike-item {
     flex: 1 1 160px;
   }
 }
 
 /* Seguro */
 
-.seguros-container-bg{
+.seguros-container-bg {
   background-color: var(--cor-11);
-  box-shadow: inset 0 80px var(--cor-0),inset 0 -80px var(--cor-12);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-12);
   padding: 0px 20px;
 }
 
-.seguros-container{
+.seguros-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -202,25 +245,28 @@
   align-items: center;
 }
 
-.seguros-texto{
+.seguros-texto {
   padding-bottom: 10px;
 }
 
-.seguros-container img{
+.seguros-container img {
   height: 650px;
   object-fit: cover;
   object-position: center;
 }
-@media (max-width:800px){
-  .seguros-container{
+
+@media (max-width:800px) {
+  .seguros-container {
     grid-template-columns: 1fr;
     padding: 40px 00px 0px;
   }
-  .seguros-container img{
+
+  .seguros-container img {
     height: initial;
     order: 2;
   }
-  .seguros-container-bg{
+
+  .seguros-container-bg {
     box-shadow: inset 0 -60px var(--cor-12);
   }
 }
