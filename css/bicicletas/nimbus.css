@@ -137,12 +137,15 @@
   margin-top: 12px;
 }
 
-.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list h3 {
+.detalhes-bicicleta-texto div.detalhes-item:last-child .ficha-tecnica-list h3{
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
   border-bottom: 1px solid var(--cor-11);
+}
+.detalhes-bicicleta-texto div.detalhes-item:last-child li.ficha-tecnica-item:last-child  h3{
+  border-bottom: none;
 }
 .bike-interna .bicicletas-home{
   margin-bottom: 60px;
