@@ -73,8 +73,11 @@
     text-align: center;
   }
   .depoimento p::before{
-    
-    left: -30px;
+    text-align: center;
+    left: -40px;
+  }
+  .depoimento p::after{
+    text-align: center;
   }
 }
 
@@ -84,6 +87,6 @@
   }
   .depoimento p::before{
     
-    left: -28px;
+    left: -10px;
   }
 }

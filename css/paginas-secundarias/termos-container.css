@@ -6,6 +6,9 @@
   padding: 60px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  background-image: url("../../img/dec/top-right.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px top 60px
 }
 .cabecalho-container p.font-2-l{
   font-weight: 500;

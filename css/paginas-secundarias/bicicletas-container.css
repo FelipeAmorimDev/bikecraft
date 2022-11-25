@@ -38,8 +38,7 @@
   color: white;
 }
 
-.bike-list li.bike-item-bg:nth-child(even) p,
-li {
+.bike-list li.bike-item-bg:nth-child(even) p{
   color: var(--cor-5);
 }
 
@@ -53,15 +52,26 @@ li {
 
 .bike-item .bike-content {
   display: grid;
-  grid-template-columns: 2fr minmax(180px,1fr);
+  grid-template-columns: 2fr minmax(210px,1fr);
   align-content: center;
   gap: 20px;
+  background-image: url("../../img/dec/top-right.svg");
+  background-repeat: no-repeat;
+  background-position: right top
 }
 
 .bike-item .bike-content h2,
 .bike-item .bike-content p {
   grid-column: span 2;
   max-width: 45ch;
+}
+.bike-item .bike-content h2::before{
+  display: block;
+  content:"";
+  width: 12px;
+  height: 8px;
+  background-color: var(--p-1);
+  transform: translateY(-8px);
 }
 
 .bike-item .bike-content p {
@@ -88,6 +98,10 @@ li {
   align-self: end;
 }
 
+.bike-content a.botao img{
+  margin-left: 16px;
+}
+
 @media (max-width:800px) {
   .bicicletas-container{
     padding-top: 40px;
@@ -109,6 +123,7 @@ li {
   .bike-item .bike-content {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    background: initial;
   }
 
   .bike-content .vantagens-list {
